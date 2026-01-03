@@ -1,0 +1,44 @@
+﻿@model List<thuviensachcaocap.Models.Book>
+
+@{
+    ViewBag.Title = "Thư viện sách";
+}
+
+<h2 class="mb-4">📚 Thư viện sách</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm">
+
+                <img src="@item.CoverImage"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover"
+                     alt="@item.Title" />
+
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+
+                    @if (item.IsVIP == true)
+                    {
+                        <span class="badge bg-warning text-dark">VIP</span>
+                    }
+
+                    <p class="card-text mt-2">
+                        @(item.Description != null && item.Description.Length > 80
+                            ? item.Description.Substring(0, 80) + "..."
+                            : item.Description)
+                    </p>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a href="@Url.Action("Details", "Books", new { id = item.BookID })"
+                       class="btn btn-sm btn-primary">
+                        Xem chi tiết
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

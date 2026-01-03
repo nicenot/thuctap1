@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebDocSachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="AuthorID" />
+    </Key>
+    <Property Name="AuthorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthorName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Bio" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Slug" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CoverImage" Type="nvarchar" MaxLength="255" />
+    <Property Name="AuthorID" Type="int" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="IsVIP" Type="bit" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Chapters">
+    <Key>
+      <PropertyRef Name="ChapterID" />
+    </Key>
+    <Property Name="ChapterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookID" Type="int" Nullable="false" />
+    <Property Name="ChapterNumber" Type="int" />
+    <Property Name="ChapterTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="ViewCount" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="ChapterID" Type="int" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Favorites">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="BookID" Type="int" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Ratings">
+    <Key>
+      <PropertyRef Name="RatingID" />
+    </Key>
+    <Property Name="RatingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="BookID" Type="int" />
+    <Property Name="Score" Type="int" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ReadingProgress">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="BookID" Type="int" Nullable="false" />
+    <Property Name="ChapterID" Type="int" />
+    <Property Name="LastReadAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Avatar" Type="nvarchar" MaxLength="255" />
+    <Property Name="Role" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <Association Name="FK__Books__AuthorID__44FF419A">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorID" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="AuthorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Books__CategoryI__45F365D3">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Chapters__BookID__4AB81AF0">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="Chapters" Type="Self.Chapters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Chapters">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comments__Chapte__5FB337D6">
+    <End Role="Chapters" Type="Self.Chapters" Multiplicity="0..1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chapters">
+        <PropertyRef Name="ChapterID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="ChapterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comments__UserID__5EBF139D">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Favorites__BookI__5535A963">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="Favorites" Type="Self.Favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Favorites">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Favorites__UserI__5441852A">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Favorites" Type="Self.Favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Favorites">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ratings__BookID__5AEE82B9">
+    <End Role="Books" Type="Self.Books" Multiplicity="0..1" />
+    <End Role="Ratings" Type="Self.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Ratings">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ratings__UserID__59FA5E80">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Ratings" Type="Self.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Ratings">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReadingPr__BookI__4F7CD00D">
+    <End Role="Books" Type="Self.Books" Multiplicity="1" />
+    <End Role="ReadingProgress" Type="Self.ReadingProgress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="ReadingProgress">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReadingPr__Chapt__5070F446">
+    <End Role="Chapters" Type="Self.Chapters" Multiplicity="0..1" />
+    <End Role="ReadingProgress" Type="Self.ReadingProgress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chapters">
+        <PropertyRef Name="ChapterID" />
+      </Principal>
+      <Dependent Role="ReadingProgress">
+        <PropertyRef Name="ChapterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReadingPr__UserI__4E88ABD4">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ReadingProgress" Type="Self.ReadingProgress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="ReadingProgress">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebDocSachModelStoreContainer">
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Books" EntityType="Self.Books" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Chapters" EntityType="Self.Chapters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Favorites" EntityType="Self.Favorites" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ratings" EntityType="Self.Ratings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReadingProgress" EntityType="Self.ReadingProgress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Books__AuthorID__44FF419A" Association="Self.FK__Books__AuthorID__44FF419A">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Books__CategoryI__45F365D3" Association="Self.FK__Books__CategoryI__45F365D3">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Chapters__BookID__4AB81AF0" Association="Self.FK__Chapters__BookID__4AB81AF0">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Chapters" EntitySet="Chapters" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comments__Chapte__5FB337D6" Association="Self.FK__Comments__Chapte__5FB337D6">
+      <End Role="Chapters" EntitySet="Chapters" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comments__UserID__5EBF139D" Association="Self.FK__Comments__UserID__5EBF139D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Favorites__BookI__5535A963" Association="Self.FK__Favorites__BookI__5535A963">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Favorites" EntitySet="Favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Favorites__UserI__5441852A" Association="Self.FK__Favorites__UserI__5441852A">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Favorites" EntitySet="Favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ratings__BookID__5AEE82B9" Association="Self.FK__Ratings__BookID__5AEE82B9">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Ratings" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ratings__UserID__59FA5E80" Association="Self.FK__Ratings__UserID__59FA5E80">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Ratings" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReadingPr__BookI__4F7CD00D" Association="Self.FK__ReadingPr__BookI__4F7CD00D">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="ReadingProgress" EntitySet="ReadingProgress" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReadingPr__Chapt__5070F446" Association="Self.FK__ReadingPr__Chapt__5070F446">
+      <End Role="Chapters" EntitySet="Chapters" />
+      <End Role="ReadingProgress" EntitySet="ReadingProgress" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReadingPr__UserI__4E88ABD4" Association="Self.FK__ReadingPr__UserI__4E88ABD4">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ReadingProgress" EntitySet="ReadingProgress" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

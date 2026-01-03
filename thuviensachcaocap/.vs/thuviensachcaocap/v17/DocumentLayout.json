@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\webbanhang\\thuviensachcaocap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|d:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\models\\modelsach.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{A82CB39C-3D11-4D06-AC4A-AFC195435F42}|thuviensachcaocap\\thuviensachcaocap.csproj|solutionrelative:thuviensachcaocap\\models\\modelsach.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:05:58.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "thuviensachcaocap\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:04:47.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:15:53.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:05:35.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Books\\Index.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:15:31.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Books\\Details.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Books\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:15:41.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Web.config",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Web.config",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Web.config",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-30T07:16:40.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "thuviensachcaocap\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwvxgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:04:22.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Models\\Book.cs",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Models\\Book.cs",
+              "RelativeToolTip": "thuviensachcaocap\\Models\\Book.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:10:09.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.config",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Web.config",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.config",
+              "RelativeToolTip": "thuviensachcaocap\\Web.config",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-30T07:12:31.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.Debug.config",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Web.Debug.config",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.Debug.config",
+              "RelativeToolTip": "thuviensachcaocap\\Web.Debug.config",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-30T07:12:38.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.Release.config",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Web.Release.config",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Web.Release.config",
+              "RelativeToolTip": "thuviensachcaocap\\Web.Release.config",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-30T07:12:41.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "thuviensachcaocap\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T07:05:49.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Modelsach.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Models\\Modelsach.edmx",
+              "RelativeDocumentMoniker": "thuviensachcaocap\\Models\\Modelsach.edmx",
+              "ToolTip": "D:\\webbanhang\\thuviensachcaocap\\thuviensachcaocap\\Models\\Modelsach.edmx [Diagram1]",
+              "RelativeToolTip": "thuviensachcaocap\\Models\\Modelsach.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-30T07:02:00.895Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

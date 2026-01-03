@@ -1,0 +1,36 @@
+﻿@model IEnumerable<thuviensachcaocap.Models.Book>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>📚 Thư viện sách</h2>
+<hr />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>@item.Title</h4>
+
+                    <p>
+                        <b>Tác giả:</b>
+                        @(item.Author != null ? item.Author.AuthorName : "Đang cập nhật")
+                    </p>
+
+                    <p>
+                        <b>Thể loại:</b>
+                        @(item.Category != null ? item.Category.CategoryName : "Khác")
+                    </p>
+
+                    <a href="@Url.Action("Detail","Books", new { id = item.BookID })"
+                       class="btn btn-primary btn-sm">
+                        Đọc sách
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
